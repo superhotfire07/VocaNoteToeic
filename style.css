@@ -1,0 +1,16 @@
+#searchBox{
+    width:340px;
+}
+td{
+    font-size:1.25em;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        font-size : 0.82em;
+    }
+    #searchBox{
+        width:180px;
+    }
+}
