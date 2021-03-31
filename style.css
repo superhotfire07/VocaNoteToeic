@@ -8,7 +8,7 @@ td{
 
 @media (max-width: 768px) {
     table {
-        font-size : 0.785em;
+        font-size : 0.755em;
     }
     #searchBox{
         width:160px;
