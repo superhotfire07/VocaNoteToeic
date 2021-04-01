@@ -16,10 +16,10 @@ $(document).ready(
 
             td.each (function(i){
 
-            var realTd = $(this).text();
+            var realTd = $(this).text().replace(/(\s*)/g, "");
 
 
-            var boxVal = searchBox.val().toLowerCase();
+            var boxVal = searchBox.val().toLowerCase().replace(/(\s*)/g, "");
 
             
             if (realTd == boxVal) {
@@ -32,32 +32,17 @@ $(document).ready(
              
 
                 if (AreThereAnyResults == false) {
-                var result = $(this).parent().clone().addClass('bg-light');
+                var result = $(this).parent().clone().addClass('bg-light').attr('data-bs-toggle','modal').attr('data-bs-target','#delete');
                 $('tbody').prepend(result);
                 AreThereAnyResults = true;
-                console.log($('.bg-light').eq(0).text());
-                $('tbody tr').eq(0).click(function() {
 
-        
-
-                    console.log('hi');
-                    $(this).remove();
-                    AreThereAnyResults = false;
-                });
-      
                 } else{
+                    console.log($('tbody tr').eq(0).text());
                 $('tbody tr').eq(0).remove();
-
-                var result = $(this).parent().clone().addClass('bg-light');
+               
+                var result = $(this).parent().clone().addClass('bg-light').attr('data-bs-toggle','modal').attr('data-bs-target','#delete');
                 $('tbody').prepend(result);
-
-                $('tbody tr').eq(0).click(function() {
-
-                    console.log('hi');
-                    $(this).remove();
-                    AreThereAnyResults = false;
-                });
-
+                
                 }
                
                 return false;
@@ -68,10 +53,16 @@ $(document).ready(
             }
         });
         
-
+        
        
     }
 );
 });
 
+$('.delete').click(function() {
+    console.log('hello');
+    $('.bg-light').eq(0).remove();
+    $('.modal').modal('hide');
+    AreThereAnyResults=false;
+});
 
