@@ -13,6 +13,7 @@
         <nav class="navbar navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" stlye='display:flex;'>Vocabulary note</a>
+              
               <form class="d-flex">
                 <input class="form-control me-2" id="searchBox"type="text" placeholder="Type and press enter" aria-label="Search">
                
@@ -20,7 +21,27 @@
             </div>
           </nav>
 
+          <!--modal-->
+          <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="deleteLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deleteLabel">Delete the result</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Are you sure you want to delete the result?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary delete">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <!--volcabulary table-->
+
         <table class="table" style='margin-top: 3.6rem'>
             <thead>
               <tr>
@@ -58,7 +79,7 @@
               <tr>
                 <th scope="row">5</th>
                 <td>overlook</td>
-                <td>내려다보다, ~위에 우뚝 솟다</td>
+                <td>내려보다, ~위에 우뚝 솟다</td>
                 <td>-</td>      
               </tr>
               <tr>
@@ -301,6 +322,133 @@
                 <td>야외에서</td>
                 <td>-</td>      
               </tr>
+              <tr>
+                <th scope="row">46</th>
+                <td>utility</td>
+                <td>공공요금</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">47</th>
+                <td>status</td>
+                <td>상태, 상황</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">48</th>
+                <td>session</td>
+                <td>기간</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">49</th>
+                <td>organize</td>
+                <td>준비하다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">50</th>
+                <td>revise</td>
+                <td>수정하다, 개정하다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">51</th>
+                <td>charge</td>
+                <td>청구하다, 요금, 담당</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">52</th>
+                <td>approve</td>
+                <td>승인하다, 찬성하다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">53</th>
+                <td>projection</td>
+                <td>예상, 추정</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">54</th>
+                <td>colleague</td>
+                <td>동료</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">55</th>
+                <td>make it</td>
+                <td>참석하다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">56</th>
+                <td>make it</td>
+                <td>참석하다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">57</th>
+                <td>proofread</td>
+                <td>교정해주다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">58</th>
+                <td>retire</td>
+                <td>퇴직히다, 그만두다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">59</th>
+                <td>flyer</td>
+                <td>광고 전단</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">60</th>
+                <td>ship</td>
+                <td>보내다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">61</th>
+                <td>take over</td>
+                <td>이어받다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">62</th>
+                <td>draft</td>
+                <td>초안</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">63</th>
+                <td>negotiation</td>
+                <td>협상</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">64</th>
+                <td>mind</td>
+                <td>꺼리다</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">65</th>
+                <td>agreement</td>
+                <td>계약서, 합의</td>
+                <td>-</td>      
+              </tr>
+              <tr>
+                <th scope="row">66</th>
+                <td>banquet</td>
+                <td>연회, 만찬</td>
+                <td>-</td>      
+              </tr>
+              
             </tbody>
           </table>
 
