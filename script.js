@@ -28,6 +28,8 @@ $(document).ready(
                 
                 
                 $(this).parent().children().show(0); */
+                
+             
 
                 if (AreThereAnyResults == false) {
                 var result = $(this).parent().clone().addClass('bg-light').attr('data-bs-toggle','modal').attr('data-bs-target','#delete');
@@ -49,11 +51,9 @@ $(document).ready(
                 return true;
                 
             }
-                
-            
         });
-        
         $('html, body').animate({scrollTop: '0'}, 50);
+        
        
     }
 );
