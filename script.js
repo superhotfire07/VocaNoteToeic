@@ -50,10 +50,10 @@ $(document).ready(
                 
             }
                 
-            $('html, body').animate({scrollTop: '0'}, 50);
+            
         });
         
-        
+        $('html, body').animate({scrollTop: '0'}, 50);
        
     }
 );
