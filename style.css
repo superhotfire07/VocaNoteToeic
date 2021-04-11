@@ -4,6 +4,13 @@
 td{
     font-size:1.25em;
 }
+#noResult{
+    text-align:center;
+    margin-top:6.6em;
+}
+#noResultText{
+    margin-top:1.35em;
+}
 
 
 @media (max-width: 768px) {
