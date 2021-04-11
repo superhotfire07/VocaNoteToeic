@@ -1,6 +1,7 @@
 <!doctype  html>
 <html>
     <head>
+        <title>Vocabulary Note</title>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
@@ -14,43 +15,26 @@
             <div class="container-fluid">
               <a class="navbar-brand" stlye='display:flex;'>Vocabulary note</a>
               
-              <form class="d-flex">
-                <input class="form-control me-2" id="searchBox"type="text" placeholder="Type and press enter" aria-label="Search">
+              <form class="d-flex" onsubmit="return false">
+                <input class="form-control me-2" id="searchBox"type="text" placeholder="Type to search" aria-label="Search">
                
               </form>
             </div>
           </nav>
 
-          <!--modal-->
-          <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="deleteLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="deleteLabel">Delete the result</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  Are you sure you want to delete the result?
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-primary delete">Delete</button>
-                </div>
-              </div>
-            </div>
-          </div>
 
         <!--volcabulary table-->
 
-        <table class="table" style='margin-top: 3.6rem'>
+        <table class="table" style='margin-top: 3.6rem;'>
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">English</th>
-                <th scope="col">Korean</th>
-                <th scope='col'>Synonyms</th>              
+                <th class='col-1'scope="col">#</th>
+                <th class='col-3'scope="col">English</th>
+                <th class='col-5'scope="col">Korean</th>
+                <th class='col-3'scope='col'>Synonyms</th>              
               </tr>
             </thead>
+            
             <tbody>
               <tr>
                 <th scope="row">1</th>
@@ -564,13 +548,17 @@
               </tr>
               <tr>
                 <th scope="row">86</th>
-                <td></td>
+                <td>renew</td>
                 <td>갱신하다</td>
                 <td>-</td>      
               </tr>
             </tbody>
+            
           </table>
-
+          <div id='noResult'>
+          <i style='font-size:120px; opacity:0.8' class="fas fa-search"></i>
+          <h2 id='noResultText'class='text-muted'>No Results Found</h2>
+          </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="script.js"></script>
