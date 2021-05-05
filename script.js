@@ -3,21 +3,22 @@ var submitBtn = $('button');
 var tr = $('tr');
 var AreThereAnyResults = false;
 var td = $('td');
-$('#noResult').hide(0);
+var noResult = $('#noResult')
+noResult.hide(0);
 
 
 $(document).ready(
     function() {
         searchBox.keyup(
             function(e) {
-            $('#noResult').hide(0);
+            noResult.hide(0);
             var $keyword = $(this).val().toLowerCase();
             $('tbody > tr').hide(0);
             var tdVal = $('td:contains('+$keyword+')');
             tdVal.parent().show(0);
             
             if (typeof tdVal.css('display') == 'undefined'){
-                $('#noResult').show(0);
+                noResult.show(0);
             }
     }
 );
